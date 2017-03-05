@@ -1,4 +1,4 @@
-
+![Alt text](/resources/Screenshot.png)
 
 # BeSafe App
 BeSafe, the app that will secure your walks anywhere you go.
