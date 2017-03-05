@@ -1,15 +1,20 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="light">
     <ion-title>
-      Ionic Blank
+      BeSafe
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-item>
-    <ion-label fixed>Where</ion-label>
-    <ion-input type="text" [value]="objective" [(ngModel)]="objective"></ion-input>
-  </ion-item>
-  <button ion-button (click)="openMap()">Map</button>
+<ion-content>
+  <h1>Be Safe, Feel Free</h1>
+  <ion-list inset>
+    <ion-item>
+      <ion-input type="text" placeholder="Where are you going?" [value]="objective" [(ngModel)]="objective"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Who should I warn?" [value]="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <button ion-button block color="primary" (click)="openMap()" outline center>Start safe walk</button>
+  </ion-list>
 </ion-content>

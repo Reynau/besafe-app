@@ -10,13 +10,15 @@ import {MapPage} from "../map/map";
 export class HomePage {
 
   objective: any;
+  email: any;
 
   constructor(public navCtrl: NavController) {
     this.objective = ""
   }
 
   openMap () {
-    if (this.objective != "")
-      this.navCtrl.push(MapPage, {'to': this.objective});
+    console.log(this.email);
+    if (this.objective != "" && this.email != "")
+      this.navCtrl.push(MapPage, {'to': this.objective, 'email': this.email});
   }
 }
