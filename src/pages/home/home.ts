@@ -9,11 +9,14 @@ import {MapPage} from "../map/map";
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  objective: any;
 
+  constructor(public navCtrl: NavController) {
+    this.objective = ""
   }
 
   openMap () {
-    this.navCtrl.push(MapPage);
+    if (this.objective != "")
+      this.navCtrl.push(MapPage, {'to': this.objective});
   }
 }

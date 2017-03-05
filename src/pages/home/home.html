@@ -7,5 +7,9 @@
 </ion-header>
 
 <ion-content padding>
+  <ion-item>
+    <ion-label fixed>Where</ion-label>
+    <ion-input type="text" [value]="objective" [(ngModel)]="objective"></ion-input>
+  </ion-item>
   <button ion-button (click)="openMap()">Map</button>
 </ion-content>
