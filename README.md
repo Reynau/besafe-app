@@ -1,4 +1,6 @@
-![Alt text](/resources/Screenshot.png)
+<p align="center">
+  <img src="/resources/Screenshot.png" />
+</p>
 
 # BeSafe App
 BeSafe, the app that will secure your walks anywhere you go.
